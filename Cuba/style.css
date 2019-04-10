@@ -1,0 +1,345 @@
+body {
+
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+/*en üst kısım */
+.top-container {
+    background-image: url(/asset/bg-photo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+}
+
+.cuba-img {
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.explore {
+    font-size: 24px;
+    padding-bottom: 2%;
+
+}
+
+/* resmin altındaki linler*/
+.top-nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #d0d4d8;
+
+}
+
+.row {
+    margin-top: 24px;
+    margin-bottom: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-size: 14px;
+    line-height: 1.36;
+    color: #909090;
+
+
+}
+
+/*dükkan kısmı*/
+
+.why {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+
+}
+
+.why-you-love {
+    font-size: 32px;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4e5665;
+}
+
+.always {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    width: 60%;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #505050;
+}
+
+.statistic {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-left: 7%;
+}
+
+.resimler {
+
+    margin-right: 40%;
+    margin-bottom: 10%;
+}
+
+.rakamlar {
+
+    margin-right: 70%;
+    margin-bottom: 10%;
+
+}
+
+.rakamlar h1 {
+
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.36;
+    color: #4e5665;
+}
+
+.rakamlar h2 {
+    width: 200%;
+    font-size: 14px;
+    color: #909090;
+    margin-left: 5%;
+    margin-top: 15%;
+
+}
+
+.hl {
+    max-width: 1170px;
+    width: 86%;
+    border-bottom: 1px solid #d0d4d8;
+    opacity: 0.5;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+/*zigzag resimler*/
+
+.zigzag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.zig {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7%;
+}
+
+.zig-left {
+    width: 50%;
+    max-width: 850px;
+    margin-right: -10%;
+    margin-left: -5%;
+    z-index: 2;
+}
+
+.heritage {
+
+    margin-top: 15%;
+    max-width: 470px;
+    padding: 40px;
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+.baslik {
+    font-size: 24px;
+    line-height: 1.04;
+    color: #4e5665;
+    margin-bottom: 3%;
+}
+
+.icerik {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #505050;
+}
+
+.zig-right {
+    width: 50%;
+}
+
+.zag {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+/* Caddillactan slidera */
+
+.cadillac {
+    display: flex;
+    margin-top: 5%;
+}
+
+.cad-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.The-Cadillacs-of-Cub {
+    font-size: 32px;
+    line-height: 1.19;
+    color: #4e5665;
+}
+
+.hover {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.75;
+    color: #ecb84c;
+
+}
+
+.row2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+}
+
+.hl2 {
+    max-width: 1170px;
+    width: 100%;
+    height: 7px;
+    opacity: 0.5;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    background-color: #212020;
+
+}
+
+.row3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    width: 66%;
+}
+
+.embargo {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #505050;
+}
+
+.hl3 {
+    max-width: 270px;
+    width: 26%;
+    border-bottom: 1px solid #d0d4d8;
+    opacity: 0.5;
+    margin-bottom: 80px;
+    margin-top: 80px;
+
+}
+
+/* slider */
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    position: relative;
+  }
+
+/* */ 
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    justify-content: space-around;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+
+.sel {
+    border-radius: 2px;
+    box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    border: solid 1px #d9dde1;
+    background-color: #ffffff;
+
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+
+}
+
+.col p {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.33;
+    color: #4e5665;
+}
+
+.col a {
+    font-size: 14px;
+    line-height: 1.36;
+    color: #505050;
+    margin-bottom: 2%;
+}
+
+.hline{
+    margin-bottom: 10%;
+}
+
+#tagency {
+    font-size: 34px;
+    font-weight: 500;
+    color: #37c491;
+
+}
+
+.allright {
+    display: flex;
+    justify-content: center;
+}
+
+.allright p {
+    font-size: 14px;
+    line-height: 1.36;
+    color: #505050;
+}
