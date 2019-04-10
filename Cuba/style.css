@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
 
     font-family: 'Nunito', sans-serif;
@@ -5,6 +8,15 @@ body {
 
 a {
     text-decoration-line: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*en üst kısım */
@@ -20,7 +32,9 @@ a {
     padding-top: 20%;
     padding-bottom: 20%;
 }
-
+.cuba-img img {
+    max-width: 70%;
+}
 .explore {
     font-size: 24px;
     padding-bottom: 2%;
@@ -85,36 +99,46 @@ a {
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    margin-left: 7%;
+    /* margin-left: 7%; */
+    width: 70%;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.statistic .box {
+    flex: 1;
+}
+.resimler {
+    /* margin-right: 40%; */
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.resimler {
-
-    margin-right: 40%;
-    margin-bottom: 10%;
+.resimler img {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .rakamlar {
-
-    margin-right: 70%;
-    margin-bottom: 10%;
-
+    /* margin-right: 70%; */
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.rakamlar h1 {
-
+.rakamlar .number {
     font-size: 22px;
     font-weight: 400;
     line-height: 1.36;
     color: #4e5665;
 }
 
-.rakamlar h2 {
-    width: 200%;
+.rakamlar .title {
     font-size: 14px;
     color: #909090;
-    margin-left: 5%;
-    margin-top: 15%;
+    margin-top: 10px;
 
 }
 
@@ -147,12 +171,11 @@ a {
     width: 50%;
     max-width: 850px;
     margin-right: -10%;
-    margin-left: -5%;
+    margin-left: -10%;
     z-index: 2;
 }
 
 .heritage {
-
     margin-top: 15%;
     max-width: 470px;
     padding: 40px;
@@ -269,9 +292,12 @@ a {
 }
 
 .slider-container{
-    display: flex;
-    justify-content: center;
+    display: block;
+    /* display: flex;
+    justify-content: center; */
     width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 /* */ 
 
@@ -289,7 +315,9 @@ a {
     margin-bottom: 2%;
     margin-top: 3%;
 }
-
+.footer-container .col a img {
+    display: inline-block;
+}
 .sel {
     border-radius: 2px;
     box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, 0.2);
@@ -339,4 +367,94 @@ a {
     font-size: 14px;
     line-height: 1.36;
     color: #505050;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .zigzag {
+        padding: 15px;
+    }
+    .zig-right-img img {
+        width: 100%;
+        height: auto;
+    }
+    .zigzag .zig,
+    .zigzag .zag {
+        flex-direction: column-reverse
+    }
+
+    .zigzag .zag .zig-left,
+    .zigzag .zag .zig-right,
+    .zigzag .zig .zig-left,
+    .zigzag .zig .zig-right {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .heritage {
+        max-width: 90%;
+        margin-top: -10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cadillac {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .top-nav .row {
+        display: block;
+        width: 100%;
+    }
+    .top-nav .row a {
+        display: block;
+        width: 50%;
+        float: left;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .why {
+        padding: 15px;
+    }
+    .why .always {
+        width: 100%;
+    }
+
+    .why .statistic {
+        width: 100%;
+    }
+
+    .why .statistic .box {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+  
+    .cad-container .row3 {
+        width: 100%;
+    }
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        flex: 0 1 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footer-container .col {
+        flex: 1;
+        flex-basis: 50%;
+        max-width: 50%;
+        margin: 0;
+        padding: 15px;
+        align-self: flex-start;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+
 }
