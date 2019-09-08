@@ -21,7 +21,7 @@ img {
 
 /*en üst kısım */
 .top-container {
-    background-image: url(/asset/bg-photo.png);
+    background-image: url(asset/bg-photo.png);
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
